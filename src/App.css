@@ -1,0 +1,186 @@
+.app {
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+}
+
+.title {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 5px;
+  border-bottom: 4px solid #4f4f4f;
+  transition: border-color 0.3s ease;
+}
+
+.settings {
+  background-color: #2F3136;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings h1 {
+  font-size: 25px;
+  text-align: left;
+  padding: 30px 30px 0px 30px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.length-container {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  gap: 5px;
+}
+
+.length-input-container,
+.length-slider-container {
+  margin: 0 10px;
+}
+
+.length-input {
+  font-family: 'Fira Code', monospace;
+  padding: 8px 12px;
+  font-size: 28px;
+  width: 55px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px 10px 1px 1px;
+  text-align: center;
+  outline: none;
+  border-bottom: 4px solid #ff5757;
+}
+
+.length-slider-container {
+  width: 300px;
+  height: 25px;
+  display: inline-block;
+}
+
+.length-slider {
+  width: 90%;
+  height: 10px;
+  appearance: none;
+  border-radius: 5px;
+  background: #00B894;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.length-slider:active {
+  background: #0ad7ae;
+}
+
+.length-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #009c7c;
+  cursor: pointer;
+}
+
+.length-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00B894;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  gap: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #444;
+  border: 2px solid #666;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s ease;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: #00b894;
+  border-color: #00b894;
+  transform: scale(1.1);
+}
+
+.checkbox-container input[type="checkbox"]:checked::before {
+  content: "✔";
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.checkbox-container input[type="checkbox"]:focus {
+  outline: none;
+  border-color: #00b894;
+}
+
+.checkbox-container label {
+  font-family: 'Fira Code', monospace;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.checkbox-container label:hover {
+  color: #00b894;
+}
+
+.checkbox-container label {
+  margin: 5px;
+}
+
+.mint-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #00B894;
+  color: white;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.mint-button:hover {
+  transform: scale(1.03);
+  background-color: #00866b;
+}
+
+.mint-button:active {
+  background-color: #00B894;
+  transform: scale(1.02);
+}
+
+.output-container {
+  display: flex;
+  justify-content: center;
+}
+
+.password-output {
+  background-color: white;
+  border: none;
+  outline: none;
+}
