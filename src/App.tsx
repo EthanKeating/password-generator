@@ -124,7 +124,7 @@ function App() {
                   checked={includeUppercase}
                   onChange={handleUppercaseChange}
                 />
-                Include Uppercase
+                <span>Include Uppercase</span>
               </label>
               <label>
                 <input
@@ -132,7 +132,7 @@ function App() {
                   checked={includeNumbers}
                   onChange={handleNumbersChange}
                 />
-                Include Number
+                <span>Include Number</span>
               </label>
               <label>
                 <input
@@ -140,7 +140,7 @@ function App() {
                   checked={includeSpecialChars}
                   onChange={handleSpecialChange}
                 />
-                Include Special Characters
+                <span>Include Special Characters</span>
               </label>
             </div>
           </div>

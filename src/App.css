@@ -54,7 +54,7 @@
   border-radius: 10px 10px 1px 1px;
   text-align: center;
   outline: none;
-  border-bottom: 4px solid #ff5757;
+  border-bottom: 4px solid #00b894;
 }
 
 .length-slider-container {
@@ -110,10 +110,24 @@
   width: 25px;
   height: 25px;
   border-radius: 5px;
+  margin: px;
   background-color: #444;
   border: 2px solid #666;
   position: relative;
   transition: background-color 0.3s, border-color 0.3s, transform 0.3s ease;
+}
+
+.checkbox-container label {
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.checkbox-container input {
+  vertical-align: middle;
+}
+.checkbox-container label span {
+  vertical-align: middle;
+  padding-left: 10px;
 }
 
 .checkbox-container input[type="checkbox"]:checked {
@@ -139,9 +153,11 @@
 }
 
 .checkbox-container label {
+  width: 100%;
   font-family: 'Fira Code', monospace;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
+  padding-bottom: 10px;
   cursor: pointer;
   user-select: none;
   transition: color 0.3s ease;
